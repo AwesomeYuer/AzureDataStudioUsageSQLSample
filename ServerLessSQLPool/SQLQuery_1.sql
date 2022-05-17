@@ -3,6 +3,10 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
+
+
+
+
 ALTER VIEW [dbo].[zview_Top10CovidCases_parquet]
 AS
 SELECT 
