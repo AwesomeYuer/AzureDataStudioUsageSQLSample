@@ -31,6 +31,7 @@ GO
 CREATE EXTERNAL DATA SOURCE Synapse_Workspace_001_data_source_abfss 
 WITH 
   ( TYPE = HADOOP , 
+	-- users is storage account <container>
     LOCATION = 'abfss://users@microshaoftcontosolake.dfs.core.windows.net' , 
     CREDENTIAL = Synapse_Workspace_001_MSI
   ) ;
