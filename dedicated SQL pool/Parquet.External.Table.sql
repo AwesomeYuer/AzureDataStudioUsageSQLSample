@@ -43,29 +43,29 @@ WITH
 go
 create EXTERNAL TABLE dbo.NYCTaxiTripSmall_Table 
 (
-	DateID							varchar(100)
-	,MedallionID					varchar(100)
-	,HackneyLicenseID				varchar(100)
-	,PickupTimeID					varchar(100)
-	,DropoffTimeID					varchar(100)
-	,PickupGeographyID				varchar(100)
-	,DropoffGeographyID				varchar(100)
-	,PickupLatitude					varchar(100)
-	,PickupLongitude				varchar(100)
-	,PickupLatLong					varchar(100)
-	,DropoffLatitude				varchar(100)
-	,DropoffLongitude				varchar(100)
-	,DropoffLatLong					varchar(100)
-	,PassengerCount					varchar(100)
-	,TripDurationSeconds			varchar(100)
-	,TripDistanceMiles				varchar(100)
-	,PaymentType					varchar(100)
-	,FareAmount						varchar(100)
-	,SurchargeAmount				varchar(100)
-	,TaxAmount						varchar(100)
-	,TipAmount						varchar(100)
-	,TollsAmount					varchar(100)
-	,TotalAmount					varchar(100)
+	DateID							int
+	,MedallionID					int
+	,HackneyLicenseID				int
+	,PickupTimeID					int
+	,DropoffTimeID					int
+	,PickupGeographyID				int
+	,DropoffGeographyID				int
+	,PickupLatitude					int
+	,PickupLongitude				int
+	,PickupLatLong					int
+	,DropoffLatitude				int
+	,DropoffLongitude				int
+	,DropoffLatLong					int
+	,PassengerCount					int
+	,TripDurationSeconds			int
+	,TripDistanceMiles				int
+	,PaymentType					int
+	,FareAmount						int
+	,SurchargeAmount				int
+	,TaxAmount						int
+	,TipAmount						int
+	,TollsAmount					int
+	,TotalAmount					int
 )
 WITH 
 ( 
@@ -76,9 +76,11 @@ WITH
 go
 
 
-	 
+select
+	DateID
+	, MedallionID
+from
+	NYCTaxiTripSmall_Table
 
-
-O
 
 
